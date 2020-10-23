@@ -21,7 +21,7 @@ def directions():
         print('--------+---------+--------')
         print('  ', 'LL', '  |','  ' ,'LM', '  |', '  ','LR', '\n')
         print('=========================')
-        print("/n")
+        print("\n")
 def winner_winner_chicken_dinner(theBoard):
     check = 0
     if theBoard['UL'] == theBoard['UM'] == theBoard['UR'] != ' ' :
@@ -64,7 +64,12 @@ def play(theBoard):
             print('The winner is', node)
             break
         else:
-            print("No winner, play again?")
+            print("There was no winner. Would you like to play again?")
+        cont = input("Please say yes or no. ")
+        if cont == "no":
+            break;
+        elif cont == "No":
+            break;
         if node == 'X':
             node = 'O'
         else:
