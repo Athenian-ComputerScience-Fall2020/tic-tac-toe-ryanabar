@@ -60,14 +60,12 @@ def play(theBoard):
                 show_board(theBoard)
                 turn = input()
         check = winner_winner_chicken_dinner(theBoard)
-        '''
         if check == 1: #CHECK
             print('The winner is', node)
-            break
+            quit()
         else:
-            print("There was no winner. Would you like to play again?")
+            print("There was no winner from this previous move. Would you like to go on to the next turn?")
         cont = input("Please say yes or no. ")
-        '''
         if cont == "no":
             break;
         elif cont == "No":
@@ -76,10 +74,4 @@ def play(theBoard):
             node = 'O'
         else:
             node = 'X'
-        if
-        elif
-        else:
-            print("Sorry that didn't work.")
-
-
 play(theBoard)
